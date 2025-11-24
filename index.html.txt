@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jesus P. Carrillo – Memoir of a Narcotics Undercover Agent</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="A tribute to Jesus P. Carrillo – narcotics undercover agent, father, and author. Read his story and share your memories."
+  />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --bg-dark: #050608;
+      --bg-card: #11141a;
+      --bg-soft: #191d26;
+      --accent: #f4b000;
+      --accent-soft: rgba(244, 176, 0, 0.15);
+      --text-main: #f5f5f7;
+      --text-muted: #a3a7b3;
+      --border-subtle: #2b303b;
+      --max-width: 1100px;
+      --radius-lg: 20px;
+      --radius-xl: 26px;
+      --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.55);
+      --transition-fast: 0.22s ease-out;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      background: radial-gradient(circle at top, #171b25 0, #050608 52%, #020308 100%);
+      color: var(--text-main);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(18px);
+      background: linear-gradient(
+        to bottom,
+        rgba(5, 6, 8, 0.96),
+        rgba(5, 6, 8, 0.82),
+        transparent
+      );
+      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    }
+
+    .nav {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-logo {
+      width: 34px;
+      height: 34px;
+      border-radius: 14px;
+      background: radial-gradient(circle at 30% 20%, #ffd76a, #f4b000 45%, #a16400);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #151515;
+      font-weight: 700;
+      font-size: 18px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+    }
+
+    .nav-title {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .nav-title-main {
+      font-family: "Playfair Display", serif;
+      font-size: 17px;
+      letter-spacing: 0.04em;
+    }
+
+    .nav-title-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      font-size: 14px;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      padding-bottom: 4px;
+      border-bottom: 1px solid transparent;
+      transition: color var(--transition-fast), border-bottom-color var(--transition-fast);
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent-soft);
+    }
+
+    .nav-cta {
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(244, 176, 0, 0.3);
+      background: radial-gradient(circle at top left, rgba(244, 176, 0, 0.18), transparent);
+      font-size: 13px;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      transition: background var(--transition-fast), transform var(--transition-fast),
+        border-color var(--transition-fast);
+    }
+
+    .nav-cta span.icon {
+      font-size: 15px;
+    }
+
+    .nav-cta:hover {
+      background: radial-gradient(circle at top left, rgba(244, 176, 0, 0.28), #050608);
+      transform: translateY(-1px);
+      border-color: rgba(244, 176, 0, 0.7);
+    }
+
+    /* Hero */
+    .hero {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+      gap: 32px;
+      align-items: center;
+    }
+
+    @media (max-width: 860px) {
+      .hero {
+        grid-template-columns: minmax(0, 1fr);
+        padding-top: 26px;
+      }
+    }
+
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 3px 10px 3px 4px;
+      border-radius: 999px;
+      border: 1px solid rgba(244, 176, 0, 0.3);
+      background: rgba(5, 6, 8, 0.8);
+      color: var(--accent);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.13em;
+    }
+
+    .hero-tag-dot {
+      width: 18px;
+      height: 18px;
+      border-radius: 999px;
+      background: radial-gradient(circle at 30% 20%, #ffd76a, #f4b000);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #141414;
+      font-weight: 700;
+      font-size: 11px;
+    }
+
+    .hero-title {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(30px, 4vw, 40px);
+      letter-spacing: 0.04em;
+      line-height: 1.2;
+    }
+
+    .hero-title span.highlight {
+      color: var(--accent);
+    }
+
+    .hero-subtitle {
+      font-size: 15px;
+      color: var(--text-muted);
+      max-width: 600px;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .hero-meta span {
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(17, 20, 26, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.04);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 6px;
+    }
+
+    .btn {
+      border-radius: 999px;
+      padding: 10px 18px;
+      font-size: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: background var(--transition-fast), transform var(--transition-fast),
+        box-shadow var(--transition-fast), border-color var(--transition-fast),
+        color var(--transition-fast);
+      background: none;
+      color: var(--text-main);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #f4b000, #ffdd7b);
+      color: #131111;
+      box-shadow: 0 14px 35px rgba(244, 176, 0, 0.35);
+      font-weight: 600;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 45px rgba(244, 176, 0, 0.5);
+    }
+
+    .btn-ghost {
+      border-color: var(--border-subtle);
+      background: rgba(9, 11, 15, 0.9);
+      color: var(--text-muted);
+    }
+
+    .btn-ghost:hover {
+      border-color: rgba(244, 176, 0, 0.6);
+      color: var(--accent);
+      background: rgba(9, 11, 15, 1);
+      transform: translateY(-1px);
+    }
+
+    .hero-note {
+      margin-top: 6px;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .hero-note strong {
+      color: var(--accent);
+    }
+
+    /* Hero Book Card */
+    .hero-book {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+
+    .book-card {
+      position: relative;
+      background: radial-gradient(circle at top, #202636, #090b10);
+      border-radius: var(--radius-xl);
+      padding: 18px 18px 16px;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      max-width: 340px;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .book-glow {
+      position: absolute;
+      inset: -40%;
+      background: radial-gradient(
+        circle at top,
+        rgba(244, 176, 0, 0.38),
+        transparent 55%
+      );
+      opacity: 0.7;
+      pointer-events: none;
+      mix-blend-mode: screen;
+    }
+
+    .book-inner {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 12px;
+      z-index: 1;
+    }
+
+    .book-cover-wrap {
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: #050608;
+    }
+
+    .book-cover {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .book-info {
+      padding-top: 2px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 13px;
+    }
+
+    .book-title {
+      font-family: "Playfair Display", serif;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    .book-author {
+      color: var(--text-muted);
+      font-size: 12px;
+    }
+
+    .book-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      font-size: 11px;
+    }
+
+    .badge {
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(5, 6, 8, 0.85);
+      color: var(--text-muted);
+    }
+
+    .badge-accent {
+      border-color: rgba(244, 176, 0, 0.6);
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+
+    .book-footer {
+      margin-top: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .book-footer strong {
+      color: var(--accent);
+    }
+
+    /* Sections */
+    main {
+      flex: 1;
+    }
+
+    .section {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 10px 20px 40px;
+    }
+
+    .section-header {
+      margin-bottom: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 16px;
+    }
+
+    .section-title {
+      font-family: "Playfair Display", serif;
+      font-size: 22px;
+    }
+
+    .section-subtitle {
+      font-size: 13px;
+      color: var(--text-muted);
+      max-width: 480px;
+    }
+
+    /* About / Story */
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+      gap: 22px;
+    }
+
+    @media (max-width: 860px) {
+      .about-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .card {
+      background: rgba(13, 16, 23, 0.98);
+      border-radius: var(--radius-lg);
+      padding: 18px 18px 16px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    .card + .card {
+      margin-top: 14px;
+    }
+
+    .card-title {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .card-body {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .card-body p + p {
+      margin-top: 8px;
+    }
+
+    .pill-row {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-size: 11px;
+    }
+
+    .pill {
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(5, 6, 8, 0.9);
+      color: var(--text-muted);
+    }
+
+    /* Timeline */
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      border-left: 1px dashed rgba(255, 255, 255, 0.12);
+      padding-left: 16px;
+      margin-left: 4px;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-left: 6px;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: -26px;
+      top: 6px;
+      width: 11px;
+      height: 11px;
+      border-radius: 999px;
+      background: radial-gradient(circle at 30% 20%, #ffd76a, #f4b000);
+      box-shadow: 0 0 0 4px rgba(244, 176, 0, 0.12);
+    }
+
+    .timeline-year {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+      margin-bottom: 2px;
+    }
+
+    .timeline-title {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 2px;
+    }
+
+    .timeline-text {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* Book section */
+    .book-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 20px;
+    }
+
+    @media (max-width: 860px) {
+      .book-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .book-quote {
+      font-style: italic;
+      font-size: 14px;
+      color: var(--text-muted);
+      border-left: 2px solid rgba(244, 176, 0, 0.6);
+      padding-left: 12px;
+    }
+
+    .book-meta-list {
+      margin-top: 10px;
+      list-style: none;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .book-meta-list li + li {
+      margin-top: 4px;
+    }
+
+    /* Memory form */
+    .memory-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 20px;
+    }
+
+    @media (max-width: 860px) {
+      .memory-layout {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    form.memory-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 4px;
+    }
+
+    label {
+      font-size: 12px;
+      color: var(--text-muted);
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .input,
+    textarea {
+      width: 100%;
+      padding: 9px 10px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(8, 10, 15, 0.95);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 13px;
+      outline: none;
+      transition: border-color var(--transition-fast), box-shadow var(--transition-fast),
+        background var(--transition-fast);
+      resize: vertical;
+      min-height: 40px;
+    }
+
+    .input:focus,
+    textarea:focus {
+      border-color: rgba(244, 176, 0, 0.8);
+      box-shadow: 0 0 0 1px rgba(244, 176, 0, 0.3);
+      background: rgba(11, 13, 18, 1);
+    }
+
+    textarea {
+      min-height: 110px;
+    }
+
+    .helper-text {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.03);
+      padding: 16px 20px 24px;
+      margin-top: 10px;
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-right {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .footer-right span {
+      opacity: 0.9;
+    }
+
+    /* Scroll behavior */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @media (max-width: 640px) {
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <nav class="nav">
+        <div class="nav-left">
+          <div class="nav-logo">J</div>
+          <div class="nav-title">
+            <div class="nav-title-main">Jesus P. Carrillo</div>
+            <div class="nav-title-sub">Memoir · Undercover Agent</div>
+          </div>
+        </div>
+        <div class="nav-links">
+          <a href="#story">Story</a>
+          <a href="#timeline">Timeline</a>
+          <a href="#book">The Book</a>
+          <a href="#memories">Share a Memory</a>
+        </div>
+        <button class="nav-cta" onclick="scrollToSection('memories')">
+          <span class="icon">✉️</span>
+          <span>Share a memory</span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-text">
+          <div class="hero-tag">
+            <div class="hero-tag-dot">JP</div>
+            Memoir of a Narcotics Undercover Agent
+          </div>
+          <h1 class="hero-title">
+            His life story, <span class="highlight">unscripted</span>.<br />
+            A tribute to <span class="highlight">Jesus P. Carrillo</span>.
+          </h1>
+          <p class="hero-subtitle">
+            A son, a husband, a narcotics undercover agent, and a man who lived with courage
+            in the shadows. This space honors his journey — and preserves the memories of
+            those who knew and loved him.
+          </p>
+
+          <div class="hero-meta">
+            <span>Undercover Narcotics Agent</span>
+            <span>Author · Husband · Father</span>
+            <span>Legacy in El Paso and beyond</span>
+          </div>
+
+          <div class="hero-actions">
+            <button class="btn btn-primary" onclick="scrollToSection('book')">
+              📖 Read about the book
+            </button>
+            <button class="btn btn-ghost" onclick="scrollToSection('memories')">
+              ✉️ Share your memory
+            </button>
+          </div>
+
+          <div class="hero-note">
+            Every message is sent directly to the family. <strong>Thank you</strong> for
+            keeping his story alive.
+          </div>
+        </div>
+
+        <div class="hero-book">
+          <div class="book-card">
+            <div class="book-glow"></div>
+            <div class="book-inner">
+              <div class="book-cover-wrap">
+                <!-- Uses the Amazon image URL you provided -->
+                <img
+                  class="book-cover"
+                  src="https://m.media-amazon.com/images/I/61J4EZlGRQL._SL1500_.jpg"
+                  alt="Book cover: Jesus P. Carrillo - Memoir of a Narcotics Undercover Agent"
+                />
+              </div>
+              <div class="book-info">
+                <div>
+                  <div class="book-title">
+                    Memoir of a Narcotics Undercover Agent<br />
+                    <span style="font-size: 13px; opacity: 0.8">His Life Story, Unscripted</span>
+                  </div>
+                  <div class="book-author">by Jesus P. Carrillo</div>
+                </div>
+                <div class="book-badges">
+                  <span class="badge badge-accent">Based on true events</span>
+                  <span class="badge">Undercover operations</span>
+                  <span class="badge">Family & faith</span>
+                </div>
+                <div class="book-footer">
+                  <span>ISBN-13: <strong>979-8264433238</strong></span>
+                  <a
+                    href="https://www.amazon.com/dp/9798264433238"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style="text-decoration: underline"
+                    >View on Amazon →</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STORY -->
+      <section id="story" class="section">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">His Story</h2>
+            <p class="section-subtitle">
+              This is a short snapshot. You can adjust the text below to match the exact
+              details you want to share about your dad’s life, work, and legacy.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div>
+            <div class="card">
+              <h3 class="card-title">A life lived between light and shadow</h3>
+              <div class="card-body">
+                <p>
+                  Jesus P. Carrillo dedicated his life to serving and protecting others as a
+                  narcotics undercover agent. He walked into dangerous places so that other
+                  families could sleep in peace — carrying courage, compassion, and faith
+                  into every assignment.
+                </p>
+                <p>
+                  Behind the badge, he was a husband, father, brother, and friend. His
+                  quick humor, strong work ethic, and deep love for his family left a mark
+                  on everyone who crossed his path.
+                </p>
+                <p>
+                  This memoir and this website were created so that his story would not fade
+                  — and so that those who knew him could share the memories that only they
+                  carry.
+                </p>
+              </div>
+              <div class="pill-row">
+                <span class="pill">Undercover narcotics operations</span>
+                <span class="pill">Service & sacrifice</span>
+                <span class="pill">Family legacy</span>
+                <span class="pill">Faith & resilience</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="card">
+              <h3 class="card-title">From the family</h3>
+              <div class="card-body">
+                <p>
+                  As his family, we remember not only the stories from the job, but the
+                  simple moments: shared meals, quiet talks, and the way he showed up for
+                  the people he loved.
+                </p>
+                <p>
+                  If you served with him, worked alongside him, or knew him in any season
+                  of his life, your memories mean more than you know. They help us see the
+                  parts of his journey we were not there to witness.
+                </p>
+                <p>
+                  Thank you for visiting this page and for taking a moment to remember
+                  Jesus with us.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TIMELINE -->
+      <section id="timeline" class="section">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Key Moments</h2>
+            <p class="section-subtitle">
+              You can customize these timeline entries later with real years, locations,
+              and events from his life.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">Early Life</div>
+              <div class="timeline-title">Foundations of character</div>
+              <div class="timeline-text">
+                Growing up, Jesus developed the values that would define his life — hard
+                work, loyalty, respect, and a fierce sense of responsibility for the people
+                around him.
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">Law Enforcement</div>
+              <div class="timeline-title">Answering the call to serve</div>
+              <div class="timeline-text">
+                He entered law enforcement and eventually stepped into narcotics
+                investigations, where he put his life on the line to confront drug
+                trafficking and protect the community.
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">Undercover Work</div>
+              <div class="timeline-title">Living in the shadows</div>
+              <div class="timeline-text">
+                As an undercover agent, Jesus carried stories that could never fully be told
+                — moments of risk, sacrifice, and quiet bravery that shaped him forever.
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">The Memoir</div>
+              <div class="timeline-title">Telling his story</div>
+              <div class="timeline-text">
+                In his book, he opened the door to his experiences — not as a movie script,
+                but as a real man who walked through danger, faith, mistakes, and grace.
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">Legacy</div>
+              <div class="timeline-title">A life that still speaks</div>
+              <div class="timeline-text">
+                His story continues in the lives of those he loved, the people he worked
+                with, and every person who reads his words or shares a memory here.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BOOK -->
+      <section id="book" class="section">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">The Book</h2>
+            <p class="section-subtitle">
+              A true-life account of narcotics undercover work, told from the inside.
+            </p>
+          </div>
+        </div>
+
+        <div class="book-grid">
+          <div class="card">
+            <h3 class="card-title">About the memoir</h3>
+            <div class="card-body">
+              <p class="book-quote">
+                “These are not Hollywood scenes. They are pages from a life that walked into
+                danger and came home carrying the weight of what most people never see.”
+              </p>
+              <p style="margin-top: 10px">
+                In his memoir, Jesus P. Carrillo invites readers into the reality of
+                undercover narcotics work — the tension, the fear, the adrenaline, and the
+                cost of standing between the streets and the people you love.
+              </p>
+              <p>
+                It is also a story about family, faith, and the internal battles that
+                continue long after a case is closed. For those who served, those who love
+                someone in law enforcement, or anyone drawn to true stories of courage, his
+                words carry a unique weight.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Details</h3>
+            <div class="card-body">
+              <ul class="book-meta-list">
+                <li><strong>Title:</strong> Memoir of a Narcotics Undercover Agent</li>
+                <li><strong>Subtitle:</strong> His Life Story, Unscripted</li>
+                <li><strong>Author:</strong> Jesus P. Carrillo</li>
+                <li><strong>Format:</strong> Paperback (via Amazon)</li>
+                <li><strong>ISBN-13:</strong> 979-8264433238</li>
+              </ul>
+              <div class="pill-row" style="margin-top: 10px">
+                <span class="pill">True crime (real life)</span>
+                <span class="pill">Law enforcement</span>
+                <span class="pill">Memoir</span>
+                <span class="pill">Family & faith</span>
+              </div>
+              <div style="margin-top: 14px; display: flex; gap: 10px; flex-wrap: wrap">
+                <a
+                  class="btn btn-primary"
+                  href="https://www.amazon.com/dp/9798264433238"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  📖 View on Amazon
+                </a>
+                <button class="btn btn-ghost" onclick="scrollToSection('memories')">
+                  ✉️ Share how the book impacted you
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MEMORIES -->
+      <section id="memories" class="section">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Share a Memory</h2>
+            <p class="section-subtitle">
+              Your words mean a lot to us. Whether you worked with him, knew him as family,
+              or crossed paths once, we’d be honored to hear your story.
+            </p>
+          </div>
+        </div>
+
+        <div class="memory-layout">
+          <div class="card">
+            <h3 class="card-title">Send a message to the family</h3>
+            <div class="card-body">
+              <!-- Mailto form: opens the visitor's email program addressed to Carlos -->
+              <form
+                class="memory-form"
+                action="mailto:detag21@yahoo.com"
+                method="post"
+                enctype="text/plain"
+              >
+                <div>
+                  <label for="name">Your name</label>
+                  <input
+                    class="input"
+                    type="text"
+                    id="name"
+                    name="Name"
+                    placeholder="Your name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email">Your email (optional)</label>
+                  <input
+                    class="input"
+                    type="email"
+                    id="email"
+                    name="Email"
+                    placeholder="you@example.com"
+                  />
+                </div>
+                <div>
+                  <label for="relation">How did you know Jesus?</label>
+                  <input
+                    class="input"
+                    type="text"
+                    id="relation"
+                    name="Relation"
+                    placeholder="Co-worker, friend, family, served together, etc."
+                  />
+                </div>
+                <div>
+                  <label for="memory">Your memory or message</label>
+                  <textarea
+                    id="memory"
+                    name="Memory"
+                    placeholder="Share a story, a moment, or a few words you’d like the family to know..."
+                    required
+                  ></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">
+                  ✉️ Send memory via email
+                </button>
+                <p class="helper-text">
+                  When you click “Send”, your email program will open with this message
+                  addressed directly to Carlos (<strong>detag21@yahoo.com</strong>).
+                </p>
+              </form>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Thank you</h3>
+            <div class="card-body">
+              <p>
+                As a family, reading your stories helps us see more of who Jesus was in the
+                world — not only at home, but out in the field, in the community, and in
+                everyday life.
+              </p>
+              <p>
+                Your words are a gift, and we’re grateful that you would take the time to
+                share them here.
+              </p>
+              <p style="margin-top: 8px; font-size: 12px; color: var(--text-muted)">
+                If you prefer, you can email directly:
+                <strong>detag21@yahoo.com</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <div>
+          In loving memory of <strong>Jesus P. Carrillo</strong>. This page is maintained by
+          his family.
+        </div>
+        <div class="footer-right">
+          <span>“His life story, unscripted.”</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    function scrollToSection(id) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  </script>
+</body>
+</html>
